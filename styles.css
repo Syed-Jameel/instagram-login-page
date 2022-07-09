@@ -1,0 +1,228 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        width: 60%;
+        height: 80%;
+        margin: 20px auto;
+    }
+
+    .row-1 {
+        display: flex;
+    }
+
+    .row-1 .col-1 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row-1 .col-2 {
+        width: 50%;
+        height: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .row-1 .col-2 .signin {
+        border: 1px solid gray;
+        padding: 20px;
+    }
+
+    .col-2 .forinput .phno {
+        margin-top: 5px;
+    }
+
+    .col-2 .forinput .pass {
+        margin-top: 10px;
+    }
+
+    .col-2 .forinput input {
+        width: 80%;
+        height: 40px;
+        padding: 5px;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid grey;
+    }
+
+    ::placeholder {
+        font-size: 0.7rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn button {
+        width: 85%;
+        height: 30px;
+        background-color: #B2DFFC;
+        margin-top: 15px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .other {
+        text-align: center;
+        margin: 7px;
+        color: darkgrey;
+        font-weight: bold;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .other hr {
+        width: 5rem;
+        margin: 7px;
+        height: 0.1rem;
+    }
+
+    .facebook {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #385185;
+        padding-bottom: 20px;
+    }
+
+    .facebook span {
+        color: #385185;
+        padding-left: 5px;
+    }
+
+    .forget {
+        font-size: 0.7rem;
+        color: #00376B;
+    }
+
+    .row-1 .col-2 .signup {
+        border: 1px solid gray;
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .row-1 .col-2 .signup span {
+        padding-right: 10px;
+        font-size: 0.9rem;
+        color: #262626;
+    }
+
+    .row-1 .col-2 .signup a {
+        text-decoration: none;
+    }
+
+    .get {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .source {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .source img {
+        width: 35%;
+        height: 30%;
+        margin: 5px;
+    }
+
+    .footer nav {
+        width: 60%;
+        margin: 30px auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer nav li {
+        list-style: none;
+        font-size: 0.7rem;
+        padding-left: 5px;
+
+    }
+
+    .footer nav li a {
+        text-decoration: none;
+        color: #8E8E8E;
+    }
+
+    .drop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 0.8rem;
+        color: #8E8E8E;
+    }
+
+    .drop .dropdown {
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width:1000px) {
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .row-1 .col-1 {
+            display: none;
+        }
+
+        .row-1 .col-2 .signin {
+            padding: 20px;
+            width: 300px;
+        }
+
+        .row-1 .col-2 .signup {
+            width: 300px;
+        }
+
+        .get {
+            width: 300px;
+        }
+
+        .source {
+            width: 300px;
+        }
+
+        .footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer nav {
+            width: 250px;
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .drop {
+            width: 300px;
+            margin: 9px auto;
+        }
+
+        .drop .dropdown {
+            padding-right: 6px;
+        }
+    }
